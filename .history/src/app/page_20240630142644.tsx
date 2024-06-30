@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-          <HomeIcon/>
-          <HomeIconNav/>
         <p>
           Colton Blackwell
         </p>
@@ -21,6 +19,9 @@ export default function Home() {
           >
             By Colton BlackWell
           </a>
+          <Retake/>
+          <HomeIcon/>
+          <HomeIconNav/>
         </div>
       </div>
 

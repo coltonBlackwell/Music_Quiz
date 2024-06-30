@@ -1,25 +1,29 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Retake from "../../components/atoms/retake_Button"
-import HomeIcon from "../../components/atoms/icon_home"
-import HomeIconNav from "../../components/molecules/icon_home_Navigation"
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-          <HomeIcon/>
-          <HomeIconNav/>
         <p>
           Colton Blackwell
         </p>
+        <p>A bigger teacup</p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By Colton BlackWell
+            By{" "}
+            <Image
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
           </a>
         </div>
       </div>
