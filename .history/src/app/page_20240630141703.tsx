@@ -1,15 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Retake from "../../components/atoms/retake_Button"
-import HomeIcon from "../../components/atoms/icon_home"
-import HomeIconNav from "../../components/molecules/icon_home_Navigation"
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-          <HomeIcon/>
-          <HomeIconNav/>
         <p>
           Colton Blackwell
         </p>
@@ -21,6 +17,7 @@ export default function Home() {
           >
             By Colton BlackWell
           </a>
+
         </div>
       </div>
 
